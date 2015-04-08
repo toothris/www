@@ -12,8 +12,8 @@ BONUSES="super_drop super_hit builder king_of_hill acid_rain hail earthquake"
 ACTS="[ \
 {'act': 'drop',    'fig': '128x128_i', 'rsz': '96x96', 'ofs': '+16+4'}, \
 {'act': 'hit',     'fig': '096x096_j', 'rsz': '80x80', 'ofs': '+28+8'}, \
-{'act': 'ground',  'fig': '096x096_s', 'rsz': '128x128', 'ofs': '+16+0'}, \
-{'act': 'rotate',  'fig': '096x096_s', 'rsz': '128x128', 'ofs': '+16+0'}, \
+{'act': 'ground',  'fig': '096x096_l', 'rsz': '80x80', 'ofs': '+24+8'}, \
+{'act': 'rotate',  'fig': '064x064_o', 'rsz': '64x64', 'ofs': '+32+32'}, \
 {'act': 'frag',    'fig': '096x096_s', 'rsz': '128x128', 'ofs': '+16+0'}, \
 {'act': 'swallow', 'fig': '096x096_s', 'rsz': '128x128', 'ofs': '+16+0'}, \
 {'act': 'float',   'fig': '096x096_s', 'rsz': '128x128', 'ofs': '+16+0'}]"
