@@ -14,9 +14,9 @@ ACTS="[ \
 {'act': 'hit',     'fig': '096x096_j', 'rsz': '80x80', 'ofs': '+28+8'}, \
 {'act': 'ground',  'fig': '096x096_l', 'rsz': '80x80', 'ofs': '+24+8'}, \
 {'act': 'rotate',  'fig': '064x064_o', 'rsz': '64x64', 'ofs': '+32+32'}, \
-{'act': 'frag',    'fig': '096x096_s', 'rsz': '128x128', 'ofs': '+16+0'}, \
-{'act': 'swallow', 'fig': '096x096_s', 'rsz': '128x128', 'ofs': '+16+0'}, \
-{'act': 'float',   'fig': '096x096_s', 'rsz': '128x128', 'ofs': '+16+0'}]"
+{'act': 'frag',    'fig': '096x096_s', 'rsz': '96x96', 'ofs': '+16+0'}, \
+{'act': 'swallow', 'fig': '096x096_t', 'rsz': '96x96', 'ofs': '+16+0'}, \
+{'act': 'float',   'fig': '096x096_z', 'rsz': '96x96', 'ofs': '+16+0'}]"
 ACTSLEN=$(python2 -c "print len($ACTS)")
 
 # main static content
