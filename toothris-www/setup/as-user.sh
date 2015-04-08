@@ -18,11 +18,6 @@ mkdir /toothris-www/jquery
 cd /toothris-www/jquery
 npm install jquery@1.11.2
 
-# toothris source
-git clone https://github.com/toothris/toothris /toothris-www/toothris.git
-cd /toothris-www/toothris.git
-git checkout 0.0.0dev
-
 # python-bcdoc
 fetch-aur /py python-bcdoc
 makepkg -sc --noconfirm
@@ -68,8 +63,10 @@ sudo pacman -U --noconfirm python-rabbyt-0.8.3-4-x86_64.pkg.tar.xz
 rm python-rabbyt-0.8.3-4-x86_64.pkg.tar.xz
 
 # toothris
-# TODO: use aur package
-cd /toothris-www/setup/toothris
+git clone https://github.com/toothris/toothris /toothris-www/toothris.git
+cd /toothris-www/toothris.git
+git checkout 0.0.0dev
+cd /toothris-www/toothris.git/pkg/archlinux
 makepkg -sc --noconfirm
 sudo pacman -U --noconfirm toothris-0.0.0dev-1-any.pkg.tar.xz
 rm toothris-0.0.0dev-1-any.pkg.tar.xz
