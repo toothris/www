@@ -8,8 +8,11 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <style type="text/css">
-      .tt-bkg-image {
+      .tt-img-left {
         padding-right: 15pt;
+        padding-bottom: 15pt}
+      .tt-img-right {
+        padding-left: 15pt;
         padding-bottom: 15pt}
     </style>
   </head>
@@ -79,7 +82,7 @@
       <div class="row">
         <div class="col-md-6">
           <h2>Background</h2>
-          <div class="pull-left tt-bkg-image">
+          <div class="pull-left tt-img-left">
             <img src="oleg-sm.jpg" class="img-rounded"></div>
           <p class="text-justify">
             I made this thingy back in 2008 over a course of 3 months.
@@ -124,11 +127,49 @@
       <div class="row">
         <div class="col-md-6">
           <h2>Gameplay</h2>
-        </div>
+          <p class="text-justify">
+            The gameplay consists of two main parts: classical and extended.
+            Classical part comes from the original Tetris game: there are 7
+            different figures; each round a random figure is falling into the
+            cup; whenever a horizontal line is completely filled with figures,
+            it's being removed from the cup.</p>
+          <p class="text-justify">
+            Extended gameplay part is unique to this game.
+            It's based on two concepts: actions and bonuses.
+            <strong>Action</strong> is something the player does
+            (for example, rotate the figure full circle, or slam it against
+            the cup).
+            <strong>Bonus</strong> is something the player gets
+            (for example, the ability to slam the figure all the way to the
+            very bottom destroying every other figure in its way).</p>
+          <p class="text-justify">
+            After player has performed a given action with all 7 figures,
+            he/she will get the corresponding bonus.
+            There's a table in the right part of the game screen showing
+            which actions with which figures were made.
+            When the row in this table is complete, player gets the bonus
+            to the left of this row.</p>
+          <p>The game is controlled with <strong>arrow keys</strong>.
+             The menu is navigated with <strong>mouse</strong>. There are
+             7 actions and 7 bonuses. They are described below.</p></div>
         <div class="col-md-6">
           <h2>Screenshot</h2>
-          <img src="sshot.jpg" class="img-rounded img-responsive">
-        </div></div>
+          <img src="sshot.jpg" class="img-rounded img-responsive"></div></div>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="pull-left tt-img-left">
+            <img src="action-drop.jpg" class="img-rounded"></div>
+          <p><strong>Drop:</strong> hold "down" button and slam the figure
+            down hard.
+            After dropping all 7 different figures you'll get Super Drop
+            bonus.</p></div>
+        <div class="col-md-6">
+          <div class="pull-right tt-img-right">
+            <img src="bonus-super-drop.jpg" class="img-rounded"></div>
+          <p><strong>Super Drop:</strong> when you slam the figure down,
+            it'll go all the way to the very bottom of the cup, destroying
+            every figure in its way.</p></div></div>
     </div>
     <script src="jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
