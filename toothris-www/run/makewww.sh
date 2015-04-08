@@ -2,6 +2,8 @@
 
 set -e
 
+BKGCOL="#00286D"
+BONUSSIZE=64x64
 TMPDIR=/var/tmp/toothris-www
 RESDIR=/toothris-www/toothris.git/src/res/game
 
@@ -23,8 +25,9 @@ convert $TMPDIR/oleg.jpg -rotate 90 -resize 160x120 $TMPDIR/oleg-sm.jpg
 convert $TMPDIR/sshot.bmp $TMPDIR/sshot.jpg
 
 convert $RESDIR/128x128_bonus_super_drop.png \
-  -background "#00286D" -alpha remove \
-  -resize 64x64 $TMPDIR/bonus-super-drop.jpg
+  -background $BKGCOL -alpha remove \
+  -resize $BONUSSIZE $TMPDIR/bonus-super-drop.jpg
 convert $RESDIR/128x128_event_drop.png \
-  -background "#00286D" -alpha remove \
-  -resize 64x64 $TMPDIR/action-drop.jpg
+  $RESDIR/096x096_s.png -geometry +16+0 -composite \
+  -background $BKGCOL -alpha remove \
+  -resize $BONUSSIZE $TMPDIR/action-drop.jpg
