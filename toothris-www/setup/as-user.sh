@@ -65,11 +65,11 @@ rm python-rabbyt-0.8.3-4-x86_64.pkg.tar.xz
 # toothris
 git clone https://github.com/toothris/toothris /toothris-www/toothris.git
 cd /toothris-www/toothris.git
-git checkout 0.0.0dev
+git checkout 1.0.0
 cd /toothris-www/toothris.git/pkg/archlinux
 makepkg -sc --noconfirm
-sudo pacman -U --noconfirm toothris-0.0.0dev-1-any.pkg.tar.xz
-rm toothris-0.0.0dev-1-any.pkg.tar.xz
+sudo pacman -U --noconfirm toothris-1.0.0-1-any.pkg.tar.xz
+rm toothris-1.0.0-1-any.pkg.tar.xz
 
 # libxmp
 fetch-aur /li libxmp
