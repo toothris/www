@@ -10,17 +10,20 @@ Whole process is quite long, may take an hour or so.
 
 ## How to Build
 
-1. Install Docker.
-2. Clone this repo:
+Install Docker.
+
+Clone this repo:
    `git clone https://github.com/toothris/www <<<path-to-repo>>>`
-3. Create config file at `/etc/toothris-www/config.sh`:
+
+Create config file at `/etc/toothris-www/config.sh`:
 ```
 AWS_ACCESS_KEY_ID="<<<amazon aws access key>>>"
 AWS_SECRET_ACCESS_KEY="<<<amazon aws secret key>>>"
 AWS_DEFAULT_REGION="<<<region, e.g. us-east-1>>>"
 S3_BUCKET="<<<s3 bucket to deploy to, e.g. mytoothris>>>"
 ```
-4. Run `<<<path-to-repo>>>/run.sh`
+
+Run `<<<path-to-repo>>>/run.sh`
 
 ## License
 
