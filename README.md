@@ -1,11 +1,11 @@
 # Toothris Homepage
 
 Homepage build automation for [Toothris](http://www.toothris.org).
-It's a reproducible build: all dependencies versions are frozen.
+This is a reproducible build: all dependencies versions are frozen.
 Among other things, it builds gameplay video from the prerecorded demo using
 the actual game code, so it can be used as a reference when building the
 [game](https://github.com/toothris/toothris).
-At the end it deploys everything to Amazon S3.
+In the end it deploys everything to Amazon S3.
 Whole process is quite long, may take an hour or so. Video generation
 requires about 15 GB at `/var/tmp/toothris-www`.
 
