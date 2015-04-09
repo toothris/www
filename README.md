@@ -11,7 +11,7 @@ requires about 15 GB at `/var/tmp/toothris-www`.
 
 ## How to Build
 
-Install Docker.
+Install [Docker](https://www.docker.com/).
 
 Clone this repo:
    `git clone https://github.com/toothris/www <<<path-to-repo>>>`
