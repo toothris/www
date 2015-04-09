@@ -33,7 +33,7 @@ cp -r /toothris-www/bootstrap.git/dist/* $TMPDIR
 cp -r /toothris-www/jquery/node_modules/jquery/dist/cdn/* $TMPDIR
 
 # pics
-convert $TMPDIR/oleg.jpg -rotate 90 -resize 160x120 $TMPDIR/oleg-sm.jpg
+convert $TMPDIR/oleg.jpg -strip -rotate 90 -resize 160x120 $TMPDIR/oleg-sm.jpg
 convert $TMPDIR/sshot.bmp $TMPDIR/sshot.jpg
 
 for BONUS in $BONUSES ; do
