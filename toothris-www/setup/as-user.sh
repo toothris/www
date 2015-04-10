@@ -4,6 +4,17 @@ set -e
 
 . /toothris-www/setup/share.sh
 
+# artificial-sweetener.xm
+cd /toothris-www/run
+curl -o artificial_sweetener.xm \
+  "http://api.modarchive.org/downloads.php?moduleid=148808"
+echo "915f6f8bf309a512e53faa98503c1978  artificial_sweetener.xm" | md5sum -c
+
+# cc by-nc-sa icon
+cd /toothris-www/www
+curl -o cc-by-nc-sa.png "https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png"
+echo "9ce59a5ce18dd03f5abb439834d2451e  cc-by-nc-sa.png" | md5sum -c
+
 # grunt-cli
 sudo npm install -g grunt-cli@0.1.13
 
