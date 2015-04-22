@@ -5,7 +5,7 @@ This is a reproducible build: all dependencies versions are frozen.
 Among other things, it builds gameplay video from the prerecorded demo using
 the actual game code, so it can be used as a reference when building the
 [game](https://github.com/toothris/toothris).
-In the end it deploys everything to Amazon S3.
+In the end it deploys everything to the Git repo.
 Whole process is quite long, may take an hour or so. Video generation
 requires about 15 GB at `/var/tmp/toothris-www`.
 
@@ -18,10 +18,9 @@ Clone this repo:
 
 Create config file at `/etc/toothris-www/config.sh`:
 ```
-AWS_ACCESS_KEY_ID="<<<amazon aws access key>>>"
-AWS_SECRET_ACCESS_KEY="<<<amazon aws secret key>>>"
-AWS_DEFAULT_REGION="<<<region, e.g. us-east-1>>>"
-S3_BUCKET="<<<s3 bucket to deploy to, e.g. mytoothris>>>"
+WWW_GIT='<<<git repo to deploy to, e.g. git@github.com:toothris/toothris.github.io.git>>>'
+ID_RSA_PUB='<<<public ssh key to access to the git repo>>>'
+ID_RSA='<<<private ssh key to access to the git repo>>>'
 ```
 
 Run `<<<path-to-repo>>>/run.sh`
