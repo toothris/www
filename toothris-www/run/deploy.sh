@@ -5,8 +5,10 @@ set -e
 . /etc/toothris-www/config.sh
 
 mkdir -p /home/user/.ssh
-echo "$ID_RSA" > /home/user/.ssh/id_rsa
 echo "$ID_RSA_PUB" > /home/user/.ssh/id_rsa.pub
+echo "$ID_RSA" > /home/user/.ssh/id_rsa
+chmod 600 /home/user/.ssh/id_rsa
+cp /toothris-www/setup/known_hosts /home/user/.ssh
 
 cd /var/tmp/toothris-www
 git init
