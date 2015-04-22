@@ -18,9 +18,11 @@ Clone this repo:
 
 Create config file at `/etc/toothris-www/config.sh`:
 ```
-WWW_GIT='<<<git repo to deploy to, e.g. git@github.com:toothris/toothris.github.io.git>>>'
-ID_RSA_PUB='<<<public ssh key to access to the git repo>>>'
-ID_RSA='<<<private ssh key to access to the git repo>>>'
+GIT_REPO='<<<git repo to deploy to, e.g. git@github.com:toothris/toothris.github.io.git>>>'
+GIT_USER='<<<git user name, e.g. James T. Kirk>>>'
+GIT_EMAIL='<<<git user email, e.g. kirk@enterprise.uss'
+ID_RSA_PUB='<<<public ssh rsa key to access to the git repo>>>'
+ID_RSA='<<<private ssh rsa key to access to the git repo>>>'
 ```
 
 Run `<<<path-to-repo>>>/run.sh`

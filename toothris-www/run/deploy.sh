@@ -10,7 +10,9 @@ echo "$ID_RSA_PUB" > /home/user/.ssh/id_rsa.pub
 
 cd /var/tmp/toothris-www
 git init
+git config user.email "$GIT_EMAIL"
+git config user.name "$GIT_USER"
 git add .
 git commit -m "Automatic deploy."
-git remote add origin $WWW_GIT
+git remote add origin $GIT_REPO
 git push -f origin master
