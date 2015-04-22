@@ -13,6 +13,7 @@ cp /toothris-www/setup/known_hosts /home/user/.ssh
 echo "$URL" > /var/tmp/toothris-www/CNAME
 
 cd /var/tmp/toothris-www
+rm -rf .git
 git init
 git config user.email "$GIT_EMAIL"
 git config user.name "$GIT_USER"
