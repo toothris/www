@@ -14,5 +14,5 @@ docker run --rm -t \
     -v /etc/toothris-www:/etc/toothris-www:ro \
     -v /var/tmp/toothris-www:/var/tmp/toothris-www \
     --name toothris-www -h toothris-www \
-    toothris/toothris-www:3 \
+    toothris/toothris-www:4 \
     sudo -iu user /toothris-www/run/run.sh
