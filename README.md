@@ -18,6 +18,7 @@ Clone this repo:
 
 Create config file at `/etc/toothris-www/config.sh`:
 ```
+URL='<<<www.toothris.org>>>'
 GIT_REPO='<<<git@github.com:toothris/toothris.github.io.git>>>'
 GIT_USER='<<<James T. Kirk>>>'
 GIT_EMAIL='<<<kirk@enterprise.uss>>>'

@@ -2,7 +2,8 @@
 
 set -e
 
-URL="www.toothris.org"
+. /etc/toothris-www/config.sh
+
 GAME_WIDTH=800
 GAME_HEIGHT=600
 GAME_FPS=60

@@ -10,6 +10,8 @@ echo "$ID_RSA" > /home/user/.ssh/id_rsa
 chmod 600 /home/user/.ssh/id_rsa
 cp /toothris-www/setup/known_hosts /home/user/.ssh
 
+echo "$URL" > /var/tmp/toothris-www/CNAME
+
 cd /var/tmp/toothris-www
 git init
 git config user.email "$GIT_EMAIL"
