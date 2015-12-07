@@ -30,18 +30,16 @@ cd /toothris-www/jquery
 npm install jquery@1.11.2
 
 # stackless-python2
-fetch-aur /st stackless-python2
+fetch-aur stackless-python2
 makepkg -sc --noconfirm
-yes | sudo pacman -U stackless-python2-2.7.6r3-1-x86_64.pkg.tar.xz
-rm stackless-python2-2.7.6r3-1-x86_64.pkg.tar.xz
+yes | sudo pacman -U stackless-python2-2.7.9-1-x86_64.pkg.tar.xz
+rm stackless-python2-2.7.9-1-x86_64.pkg.tar.xz
 
 # python-rabbyt
-# TODO: remove patch when upstream package is updated.
-fetch-aur /py python-rabbyt
-patch PKGBUILD /toothris-www/setup/python-rabbyt/PKGBUILD.patch
+fetch-aur python2-rabbyt
 makepkg -sc --noconfirm
-sudo pacman -U --noconfirm python-rabbyt-0.8.3-4-x86_64.pkg.tar.xz
-rm python-rabbyt-0.8.3-4-x86_64.pkg.tar.xz
+sudo pacman -U --noconfirm python2-rabbyt-0.8.3-1-x86_64.pkg.tar.xz
+rm python2-rabbyt-0.8.3-1-x86_64.pkg.tar.xz
 
 # toothris
 git clone https://github.com/toothris/toothris /toothris-www/toothris.git
