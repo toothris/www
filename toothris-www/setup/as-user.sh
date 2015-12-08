@@ -35,7 +35,7 @@ makepkg -sc --noconfirm
 yes | sudo pacman -U stackless-python2-2.7.9-1-x86_64.pkg.tar.xz
 rm stackless-python2-2.7.9-1-x86_64.pkg.tar.xz
 
-# python-rabbyt
+# python2-rabbyt
 fetch-aur python2-rabbyt
 makepkg -sc --noconfirm
 sudo pacman -U --noconfirm python2-rabbyt-0.8.3-1-x86_64.pkg.tar.xz
@@ -44,26 +44,26 @@ rm python2-rabbyt-0.8.3-1-x86_64.pkg.tar.xz
 # toothris
 git clone https://github.com/toothris/toothris /toothris-www/toothris.git
 cd /toothris-www/toothris.git
-git checkout 1.0.0
+git checkout 1.0.1
 cd /toothris-www/toothris.git/pkg/archlinux
 makepkg -sc --noconfirm
-sudo pacman -U --noconfirm toothris-1.0.0-1-any.pkg.tar.xz
-rm toothris-1.0.0-1-any.pkg.tar.xz
+sudo pacman -U --noconfirm toothris-1.0.1-1-any.pkg.tar.xz
+rm toothris-1.0.1-1-any.pkg.tar.xz
 
 # libxmp
-fetch-aur /li libxmp
+fetch-aur libxmp
 makepkg -sc --noconfirm
-sudo pacman -U --noconfirm libxmp-4.3.5-1-x86_64.pkg.tar.xz
-rm libxmp-4.3.5-1-x86_64.pkg.tar.xz
+sudo pacman -U --noconfirm libxmp-4.3.9-1-x86_64.pkg.tar.xz
+rm libxmp-4.3.9-1-x86_64.pkg.tar.xz
 
 # xmp
-fetch-aur /xm xmp
+fetch-aur xmp
 makepkg -sc --noconfirm
 sudo pacman -U --noconfirm xmp-4.0.10-1-x86_64.pkg.tar.xz
 rm xmp-4.0.10-1-x86_64.pkg.tar.xz
 
 # ffmpeg-libfdk_aac
-fetch-aur /ff ffmpeg-libfdk_aac
+fetch-aur ffmpeg-libfdk_aac
 makepkg -sc --noconfirm
-sudo pacman -U --noconfirm ffmpeg-libfdk_aac-1:2.5.4-1-x86_64.pkg.tar.xz
-rm ffmpeg-libfdk_aac-1:2.5.4-1-x86_64.pkg.tar.xz
+sudo pacman -U --noconfirm ffmpeg-libfdk_aac-1:2.7.2-4-x86_64.pkg.tar.xz
+rm ffmpeg-libfdk_aac-1:2.7.2-4-x86_64.pkg.tar.xz

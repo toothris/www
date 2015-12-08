@@ -1,0 +1,13 @@
+diff --git a/PKGBUILD b/PKGBUILD
+index 8b2d67d..4912d49 100644
+--- a/PKGBUILD
++++ b/PKGBUILD
+@@ -79,7 +79,7 @@ build() {
+     --enable-libfdk_aac \
+     --enable-nonfree
+ 
+-  make
++  make -j64
+   make tools/qt-faststart
+   make doc/ff{mpeg,play,server}.1
+ }
