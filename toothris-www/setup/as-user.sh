@@ -41,10 +41,10 @@ rm stackless-python2-2.7.9-1-x86_64.pkg.tar.xz
 # python2-rabbyt
 fetch-aur python2-rabbyt
 # TODO: remove after updating to 2015-12-10
-git checkout 5797d07
+git checkout 68cebb0
 makepkg -sc --noconfirm
-sudo pacman -U --noconfirm python2-rabbyt-0.8.3-1-x86_64.pkg.tar.xz
-rm python2-rabbyt-0.8.3-1-x86_64.pkg.tar.xz
+sudo pacman -U --noconfirm python2-rabbyt-0.8.3-2-x86_64.pkg.tar.xz
+rm python2-rabbyt-0.8.3-2-x86_64.pkg.tar.xz
 
 # toothris
 git clone https://github.com/toothris/toothris /toothris-www/toothris.git
