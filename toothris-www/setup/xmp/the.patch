@@ -1,0 +1,13 @@
+diff --git a/PKGBUILD b/PKGBUILD
+index de3891e..c288bd1 100644
+--- a/PKGBUILD
++++ b/PKGBUILD
+@@ -18,7 +18,7 @@ md5sums=('ffe79874f29aac2ac6da2f9f9bd72da0')
+ build() {
+   cd $pkgname-$pkgver
+   ./configure --prefix=/usr
+-  make
++  make -j64
+ }
+ 
+ package() {
